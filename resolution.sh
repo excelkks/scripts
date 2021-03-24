@@ -1,5 +1,6 @@
-width=1600
-height=900
+#!/usr/bin/env bash
+width=1440
+height=810
 
 cvt $width $height | tail -1 | cut -d ' ' -f2- | xargs xrandr --newmode
 modename=$(cvt $width $height | tail -1 | cut -d'"' -f2)
